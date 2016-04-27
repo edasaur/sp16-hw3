@@ -1,0 +1,38 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+<p>Users</p>
+<li>
+  <% @users.each do |user| %>
+  <ol>
+    <li>
+      <ul>Name: <%= user.name =%></ul>
+      <ul>Email: <%= user.email =%></ul>
+      <ul>Age: <%= user.age =%></ul>
+    </li>
+  </ol>
+  <% end%>
+<li>
+
+<p>Todos</p>
+<li>
+  <% @todos.each do |todo| %>
+  <ol>
+    <li>
+      <ul>Name: <%= todo.name =%></ul>
+      <ul>Description: <%= todo.description =%></ul>
+    </li>
+  </ol>
+  <% end%>
+<li>
+
+<p>Cats</p>
+<li>
+  <% @cats.each do |cat| %>
+  <ol>
+    <li>
+      <ul>Name: <%= cat.name =%></ul>
+    </li>
+  </ol>
+  <% end%>
+<li>
+
